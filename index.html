@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Sign Up </title>
+</head>
+<body>
+    <div class="myFrm" >
+        <div class="box"  >
+           <div class="text" >
+            <img src="images/logo.png" alt="">
+            <p id="heading" style="font-size: 40px; color: black; margin-bottom: 10px; " >Sign up</p>
+            <p id="line" >Enter your details below to create your account and get started.</p>
+           </div>
+           <form onsubmit="return data()" action="Pages/thankyou.html">
+           <div class="container">
+            <div class="item">
+                Full Name <br>
+                <input type="text" id="name" placeholder="enter..." name="" >
+            </div>
+            <div class="item">
+                Email <br>
+                <input type="email" name="" id="email" placeholder="example@gmail.com">
+            </div>
+            <div class="item">
+                Date of Birth <br>
+                <input style="background-color: white;" type="text" name=""  placeholder="MM/DD/YYYY" onfocus="(this.type='date')" id="dob" >
+            </div>
+            <div class="item">
+                Phone Number <br>
+                <input type="number" name="" id="mobileNumber" placeholder="+91********09" >
+            </div>
+            <div class="item">
+                Nationality <br>
+                <select name="nationality"  id="nationality" required>
+                    <option value="select">--select here--</option>
+                    <option value="india">Indian</option>
+                    <option value="america">American</option>
+                    <option value="russia">Russian</option>
+                </select>
+            </div>
+            <div class="item">
+                ID Type <br>
+                <select name="identity" id="idType" required >
+                    <option value="select">--select here--</option>
+                    <option value="passport">Passport</option>
+                    <option value="aadhar">Aadhar Card</option>
+                    <option value="Licence">Driving Licence</option>
+                </select>
+            
+            </div>
+            <div class="item">
+                Password <br>
+                <input type="password" id="password" placeholder="enter..." >
+            </div>
+            <div class="item">
+                Confirm Password <br>
+                <input type="password" id="confirmPassword" placeholder="enter..." >
+            </div>
+            <div class="item"> <button type="button" onclick="resetpage()" style="color: black; background-color: white; " >Cancel</button></div>
+            <div class="item"> <button type="submit" style="border: 0; background-color: #483d8b; color: white; " >Confirm</button></div>
+            <div id="lastline" class="item">Already have an account? <span style="color: #483d8b;" ><a href="Pages/login.html">Login</a></span></div>
+        
+        </div>
+    </form>
+</div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/login.css">
+    <title>LogIn</title>
+</head>
+<body>
+    <div class="countainer">
+        <div class="box">
+            <div class="upper" >
+                <img src="../images/logo.png" alt="">
+                <p id="welcome">Welcome Back</p>
+                <p style="color: grey;" >Glad to see you again👋 <br> Login to your account below </p>
+            </div>
+            <div class="lower">
+                
+                    <div class="item"><button href="https://myaccount.google.com/" style="background-color: white; border: 1px solid rgb(199, 197, 197); border-radius:5px; " ><img src="../images/glogo.png" alt="Google Logo" class="google-logo">
+                        <span class="login-text">Continue with Google</span></button></div>
+                    <form action="thankyou.html" onsubmit="return data()">    
+                    <div class="item">
+                        Email <br>
+                        
+                        <input type="email" name="" placeholder="enter email..." id="email">
+                    
+                    </div>
+                    <div class="item">
+                        Password <br>
+                        <input type="password" name="" placeholder="enter password..."  id="password">
+
+                    </div>
+                
+                
+                    <div class="item"><button type="submit" style="background-color: #483d8b; color: white; border-radius:5px; " >Login</button></div>
+                    <div class="item" style="text-align: center;" >Don't have an account? <span style="color:#483d8b; " ><a href="../index.html">Sign up for Free</a></span></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function data(){
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+            if(email==""||password==""){
+                alert("All fields are mandatory.");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
